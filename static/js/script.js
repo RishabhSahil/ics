@@ -45,6 +45,22 @@ function mapsearch(){
     }
 } 
 
+function rishabhsahil(){
+    query = document.getElementById('textSearch').value;
+    if(query==false){
+        
+        console.log("please enter your query");
+        window.location = 'https://www.rishabhsahil.ml/'
+        return false;
+    }
+    else{
+        window.location = 'https://www.rishabhsahil.ml/search?q=' + query
+        return false;
+
+    }
+} 
+
+
 function youtubesearch(){
     query = document.getElementById('textSearch').value;
     if(query==false){
@@ -129,7 +145,7 @@ document.getElementById('frmsearch').onsubmit = function() {
     }
     
     else{
-        window.location = 'search?q=' + query
+        window.location = 'https://www.google.com/search?q=' + query
         return false;
 
     }
